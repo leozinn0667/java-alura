@@ -1,0 +1,10 @@
+criar diretório saida caso nao exista
+por no meio ?
+
+//
+
+CENTRALIZAR
+NOTAS
+CONTORNO(OUTLINE)
+VER SOBRE INPUT STREAM
+CRIAR PASTA DE SAÍDA

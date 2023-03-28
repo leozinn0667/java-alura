@@ -1,7 +1,0 @@
-fzr
-
-UTF- nota com FOR e arredondar estrelas.
-
-esconder chave properts.ini
-
-
