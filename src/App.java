@@ -33,11 +33,12 @@ public class App {
             
             String urlImagem = filme.get("image");
             String titulo = filme.get("title");
+            String nota = filme.get("imDbRating");
 
             InputStream inputStream = new URL(urlImagem).openStream();
-            String nomeArquivo = titulo + ".png";
+            String nomeArquivo = titulo.replace(":", "-")  + ".png";
 
-            geradora.criar(inputStream, nomeArquivo);
+            geradora.criar(inputStream, nomeArquivo, nota);
 
             System.out.println(titulo);
             System.out.println();
