@@ -26,12 +26,12 @@ public class App {
             for (int i = 0; i < 3; i++) {
                 Conteudo conteudo = conteudos.get(i);
 
-                InputStream inputStream = new URL(conteudo.getUrlImagem()).openStream();
-                String nomeArquivo = conteudo.getTitulo().replace(":", "-")  + ".png";
+                InputStream inputStream = new URL(conteudo.UrlImagem()).openStream();
+                String nomeArquivo = conteudo.Titulo().replace(":", "-")  + ".png";
     
                 geradora.criar(inputStream, nomeArquivo);
     
-                System.out.println(conteudo.getTitulo());
+                System.out.println(conteudo.titulo());
                 System.out.println();
 
             }
