@@ -10,7 +10,7 @@ import javax.imageio.ImageIO;
 
 public class GerarFig {
     
-    public void criar(InputStream inputStream, String nomeArquivo, String nota) throws Exception {
+    public void criar(InputStream inputStream, String nomeArquivo) throws Exception {
 
             // ler imagem
         BufferedImage imagemOriginal = ImageIO.read(inputStream);
@@ -26,7 +26,7 @@ public class GerarFig {
         graphics.drawImage(imagemOriginal, 0, 0, null);
 
         // centralizar
-        String texto = "Nota IMDB:" + nota;
+        String texto = "BOTTOM TEXT";
         FontMetrics metrics = graphics.getFontMetrics();
         int larguraTexto = metrics.stringWidth(texto);
         // int meio = (largura - larguraTexto) / 2;
