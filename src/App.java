@@ -26,8 +26,8 @@ public class App {
             for (int i = 0; i < 3; i++) {
                 Conteudo conteudo = conteudos.get(i);
 
-                InputStream inputStream = new URL(conteudo.UrlImagem()).openStream();
-                String nomeArquivo = conteudo.Titulo().replace(":", "-")  + ".png";
+                InputStream inputStream = new URL(conteudo.urlImagem()).openStream();
+                String nomeArquivo = conteudo.titulo().replace(":", "-")  + ".png";
     
                 geradora.criar(inputStream, nomeArquivo);
     

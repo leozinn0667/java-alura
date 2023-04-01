@@ -18,10 +18,9 @@ public class httpClient {
             return response.body();
             
         } catch (IOException | InterruptedException ex) {
-            throw new RuntimeException(ex);
+            throw new HttpClientExeption("Erro ao consultar a URL");
         }
         
-
     }
     
 }
